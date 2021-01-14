@@ -1,0 +1,152 @@
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  border-color: red;
+
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+}
+
+.grid-item {
+  border: 1px solid black;
+  text-align: center;
+  width: 480px;
+  height: 600px;
+  background-color: #b8e2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.box {
+  margin: 5px;
+  border: dotted 1px black;
+  width: 100px;
+  height: 150px;
+  background-color: black;
+}
+
+.Head {
+  border-bottom: 1px solid #909497;
+  font-weight: bold;
+  background-color: #F0E6DD;
+  margin-top: 0;
+  width: 100%;
+}
+
+#computerWin {
+  background-color: black;
+}
+
+#computerWin,
+#tie,
+#humanWin {
+  color: yellow;
+  font-size: 450%;
+  font-weight: bold;
+
+}
+
+.fas {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.btn {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+
+}
+
+#scissor {
+  background-color: #BC9D00;
+}
+
+#rock,
+.pink {
+  background-color: #E80189;
+}
+
+#paper,
+.green {
+  background-color: #01A54D;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 3.5rem;
+}
+
+.computer-result {
+
+  font-size: 2.5rem;
+  height: 3.5rem;
+  font-weight: 900;
+}
+
+#hidden {
+  display: none;
+  margin-top: 3.5rem;
+}
+
+#trophy {
+  color: yellow
+}
+
+#broken-heart {
+  color: red
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+#result {
+  justify-content: space-around;
+}
+
+.conversation {
+  text-align: left;
+}
+
+.action {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+}
+
+.play {
+  background-color: #CA9B78;
+}

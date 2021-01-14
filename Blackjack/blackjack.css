@@ -1,0 +1,164 @@
+body {
+
+    width: 100%;
+    background: #222;
+    background-image: repeating-linear-gradient(to bottom, transparent 7px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 13px, transparent 13px);
+}
+
+h1 {
+    margin: 0;
+    font-family: "Modak", cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    animation: blink 12s infinite;
+    text-shadow: 0 0 5px #ffa500 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+
+@keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
+}
+
+.btn {
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 7rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.deal {
+    background-color: #00a03d;
+
+}
+
+.hit {
+    background-color: #153D37;
+}
+
+.stand {
+    background-color: #A4323D;
+}
+
+.game-container {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 6rem;
+}
+
+p {
+    color: white;
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: center;
+}
+
+.players {
+    width: 55rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.player {
+    padding: 10px;
+    vertical-align: top;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background: #f5f5f5;
+    margin: 1rem;
+}
+
+
+.active {
+    border: 5px solid #ffa500;
+}
+
+.status {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    margin: 1rem
+}
+
+.card .value {
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+
+.card .suit {
+    background-image: url('card.png');
+    height: 100px;
+    width: 90px;
+}
+
+.card .diamonds {
+    background-position-y: 100px;
+}
+
+.card .hearts {
+    background-position-x: 90px;
+}
+
+.card .clubs {
+    background-position-x: 90px;
+    background-position-y: 100px;
+}
+
+.card .value {
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+
+.card {
+    padding: 10px;
+    border: solid 1px #808080;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 14pt;
+    text-align: center;
+    color: black;
+    margin: 3px;
+    background: white;
+}

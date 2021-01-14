@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="kps.css">
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="Head">HUMAN</div>
+      <div class="column">
+
+        <div class="btn-container">
+          <button onClick="pickRock()" class="btn" id="rock"><i class="fas fa-fist-raised"></i></button>
+          <button onClick="pickScissor()" class="btn" id="scissor"><i class="fas fa-hand-scissors"></i></button>
+          <button onClick="pickPaper()" class="btn" id="paper"><i class="fas fa-hand-spock"></i></button>
+        </div>
+      </div>
+      <img class="image" id="human" src="rock.jpg">
+    </div>
+
+    <div class="grid-item">
+      <div class="score">
+        <div class="box">
+          <p class="Head">WINS</p>
+          <div id="humanWin"></div>
+        </div>
+
+        <div class="box">
+          <p class="Head">TIES</p>
+          <div id="tie"></div>
+        </div>
+
+        <div class="box">
+          <p class="Head">WINS</p>
+          <div id="computerWin"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <button onclick="play()" class="action play">PLAY</button>
+        <button onclick="playAgain()" class=" action pink">RESET</button>
+      </div>
+      <div class="computer-result"></div>
+    </div>
+
+    <div class="grid-item">
+      <div class="Head">COMPUTER</div>
+      <img class="display-img-computer image" id="hidden">
+    </div>
+  </div>
+
+  <script src="kps.js"></script>
+</body>
+
+</html>

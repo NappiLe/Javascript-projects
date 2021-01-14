@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <title>Speed test</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>SPEED TEST </h1>
+
+        <div class=" flex column">
+            <div class="flex row">
+                <div class=" flex column">
+                    <p>Score</p>
+                    <p class="score">0</p>
+                </div>
+
+                <div class=" flex column"><button id="reset" onClick="start()">
+                        Play again
+                    </button>
+                    <button id="start" class="start" onClick="start()">
+                        START
+                    </button>
+                    <p id="status">READY</p>
+                </div>
+
+                <div class=" flex column">
+                    <p>High score </p>
+                    <p class="high-score">0</p>
+                </div>
+
+            </div>
+            <div class="flex row " id="center">
+                <button class="button" id="button0"></button>
+                <button class="button" id="button1"></button>
+                <button class="button" id="button2"></button>
+                <button class="button" id="button3"></button>
+            </div>
+        </div>
+
+    </main>
+    <script src="speedtest.js"></script>
+</body>
+
+</html>
